@@ -8,59 +8,9 @@
     <title>Ozon test task</title>
   </head>
   <body>
-    <div class="progress">
-      <div class="progress__title">Progress</div>
-      <div class="progress__wrapper">
-        <div class="progress__graph">
-          <div class="progress__circle-wrap">
-            <svg class="progress__ring" width="120" height="120">
-              <circle
-                class="progress__circle-background"
-                stroke="#F0F3F6"
-                stroke-width="8"
-                cx="60"
-                cy="60"
-                r="44"
-                fill="transparent"
-              />
-              <circle
-                class="progress__circle"
-                stroke="#255AF6"
-                stroke-width="8"
-                cx="60"
-                cy="60"
-                r="44"
-                fill="transparent"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="progress__controls">
-          <div class="progress__control">
-            <input type="number" value="100"  class="progress__input" />
-            <div class="progress__control-title">Value</div>
-          </div>
-          <div class="progress__control">
-            <label class="progress__switch">
-              <input
-                name="animation"
-                class="progress__checkbox"
-                type="checkbox"
-              />
-              <span class="progress__slider progress__slider_round"></span>
-            </label>
-            <div class="progress__control-title">Animate</div>
-          </div>
-          <div class="progress__control">
-            <label class="progress__switch">
-              <input name="hide" class="progress__checkbox" type="checkbox" />
-              <span class="progress__slider progress__slider_round"></span>
-            </label>
-            <div class="progress__control-title">Hide</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
+    <progress-card percentage="20"></progress-card>
+    <progress-card></progress-card>
+    <progress-card percentage="10"></progress-card>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
